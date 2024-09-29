@@ -40,252 +40,54 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
      * @param a commandline args
      */
     public static void main(String[] a){
-        Turtle bob = new Turtle();
-        bgcolor("gray");
-        bob.penColor("skyblue");
-        bob.speed(0.1);
-        for(int i=0;i<335;i++){
-            bob.forward(5);
-            bob.width(60);
-            bob.left(2);
-        }  
-        bob.right(90);
-        bob.forward(400);
-        bob.left(90);
-        for(int i=0;i<300;i++){
-          bob.forward(5);
-          bob.width(60);
-          bob.right(2);
-          }
-        bob.left(90);
-        bob.forward(400);
-        bob.right(67);
-        bob.penColor("black");
-        for(int i=0;i<180;i++){
-            bob.forward(25);
-            bob.width(55);
-            bob.right(2);
-            }  
-        bob.right(183);
-        bob.up();
-        bob.forward(900);
-        bob.right(90);
-        bob.forward(100);
-        bob.down();
-        bob.forward(300);       //S
-        bob.left(90);
-        bob.forward(300);
-        bob.left(90);
-        bob.forward(300);
-        bob.right(90);
-        bob.forward(300);
-        bob.right(90);
-        bob.forward(300);
-        bob.left(180);
-        bob.up();
-        bob.forward(600);
-        bob.down();
-        bob.penColor("skyblue");
-        bob.left(90);               //T
-        bob.forward(600);
-        bob.left(90);
-        bob.forward(200);
-        bob.left(180);
-        bob.forward(400);
-        bob.up();
-        bob.forward(100);
-        bob.down();
-        bob.penColor("black");
-        bob.forward(300);       //E
-        bob.left(180);
-        bob.forward(300);
-        bob.left(90);
-        bob.forward(300);      
-        bob.left(90);
-        bob.forward(300);
-        bob.left(180);
-        bob.forward(300);
-        bob.left(90);
-        bob.forward(300);
-        bob.left(90);
-        bob.forward(300);
-        bob.up();
-        bob.forward(100);
-        bob.down();
-        bob.left(70);           //A
-        bob.forward(650);
-        bob.right(140);
-        bob.forward(350);
-        bob.right(110);
-        bob.forward(140);
-        bob.left(180);
-        bob.forward(140);
-        bob.right(70);
-        bob.forward(300);
-        bob.left(70);
-        bob.up();
-        bob.forward(100);
-        bob.down();
-        bob.left(90);              //M
-        bob.forward(600);
-        bob.right(160);
-        bob.forward(620);
-        bob.left(140);              
-        bob.forward(620);
-        bob.right(160);
-        bob.forward(600);
-        //__________________________________________________________________________//summer
-        bob.up();
-        bob.forward(300);
-        bob.right(90);
-        bob.forward(2280);
-        bob.width(30);
-        bob.down();
-        bob.forward(150);       //S
-        bob.left(90);
-        bob.forward(150);
-        bob.left(90);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);
-        bob.left(180);
-        bob.up();
-        bob.forward(220);       //U
-        bob.down();
-        bob.left(90);
-        bob.forward(300);
-        bob.left(180);
-        bob.forward(300);
-        bob.left(90);
-        bob.forward(180);
-        bob.left(90);
-        bob.forward(300);
-        bob.right(90);
-        bob.up();
-        bob.forward(70);
-        bob.right(90);
-        bob.forward(300);
-        bob.down();
-        bob.left(180);              //M
-        bob.forward(300);
-        bob.right(160);
-        bob.forward(320);
-        bob.left(140);              
-        bob.forward(320);
-        bob.right(160);
-        bob.forward(300);
-        bob.left(90);
-        bob.up();                       //M
-        bob.forward(70);
-        bob.down();
-        bob.left(90);
-        bob.forward(300);
-        bob.right(160);
-        bob.forward(320);
-        bob.left(140);              
-        bob.forward(320);
-        bob.right(160);
-        bob.forward(300);
-        bob.left(90);
-        bob.up();
-        bob.forward(70);
-        bob.down();
-        bob.forward(150);       //E
-        bob.left(180);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);      
-        bob.right(90);
-        bob.forward(150);
-        bob.right(180);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);
-        bob.up();
-        bob.forward(70);          //R
-        bob.right(90);
-        bob.down();
-        bob.forward(300);
-        bob.left(180);
-        bob.forward(300);
-        bob.right(90);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);
-        bob.left(135);
-        bob.forward(210);
+        Turtle A = new Turtle();
+        Turtle B = new Turtle();
+        Turtle C = new Turtle();
 
-        bob.left(45);                // S
-        bob.up();
-        bob.forward(350);
-        bob.down();
-        bob.forward(150);       
-        bob.left(90);
-        bob.forward(150);
-        bob.left(90);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);
-        bob.up();
-        bob.forward(70);
-        bob.right(90);
-        bob.forward(300);
-        bob.left(90);
-        bob.down();
-        bob.left(75);               //A
-        bob.forward(320);
-        bob.right(150);
-        bob.forward(180);
-        bob.right(105);
-        bob.forward(50);
-        bob.left(180);
-        bob.forward(50);
-        bob.right(75);
-        bob.forward(140);
-        bob.left(75);
-        bob.up();
-        bob.forward(70);
-        bob.down();
-        bob.left(90);               //L
-        bob.forward(300);
-        bob.right(180);
-        bob.forward(300);
-        bob.left(90);
-        bob.forward(150);
-        bob.up();
-        bob.forward(70);
-        bob.down();
-        bob.forward(150);       //E
-        bob.left(180);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);      
-        bob.right(90);
-        bob.forward(150);
-        bob.right(180);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);
-        bob.right(90);
-        bob.forward(150);
+        Runnable turtleA = () ->{
+            A.penColor(Color.black);
+            A.forward(100);
+            A.right(90);
+            A.forward(100);
+            A.right(90);
+            A.forward(100);
+            A.right(90);
+            A.forward(100);
+        };
 
-
-
-
-        // Turtle sp = new Turtle();
-        // sp.penColor("red");
-        // sp.speed(1);
-        // sp.forward(1000);
-        // sp.left(180);
-        // sp.forward(1000);
+        Runnable turtleB = () ->{
+            B.penColor(Color.blue);
+            B.left(60);
+            B.forward(100);
+            B.right(60);
+            B.forward(100);
+            B.right(150);
+            B.forward(165);
+        };
+        Runnable turtleC = () ->{
+            C.penColor(Color.red);
+            C.right(90);
+            C.up();
+            C.forward(100);
+            C.down();
+            C.forward(100);
+            C.right(60);
+            C.forward(100);
+            C.right(60);
+            C.forward(100);
+            C.right(60);
+            C.forward(100);
+            C.right(60);
+            C.forward(100);
+            C.right(60);
+            C.forward(100);
+        };
+        Thread threadA = new Thread(turtleA);
+        Thread threadB = new Thread(turtleB);
+        Thread threadC = new Thread(turtleC);
+        threadA.start();
+        threadB.start();
+        threadC.start();
     }
 
     private static ArrayList<Turtle> turtles;
